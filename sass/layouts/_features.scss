@@ -1,0 +1,31 @@
+.features__list {
+	display: flex;
+}
+
+.features__item {
+	width: calc((100% - 3 * 30px) / 4);
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.features__wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	background-color: $section-bg-color;
+}
+
+.features__subtitle {
+	color: $primary-text-color;
+	margin-bottom: 10px;
+}
+
+.features__text {
+	@include font(null, 14px, 1.71, null);
+	color: $secondary-text-color;
+}

@@ -1,0 +1,24 @@
+.logo {
+	font-family: $secondary-font;
+	@include font(700, 26px, 1.19, null);
+	color: $accent-color;
+}
+
+.header__logo {
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
+.header__text {
+	color: $logo-color;
+}
+
+.footer__logo {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.footer__text {
+	color: $tertiary-text-color;
+}
