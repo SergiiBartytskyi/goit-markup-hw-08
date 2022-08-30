@@ -1,8 +1,6 @@
 body {
 	font-family: $primary-font;
-	font-size: 16px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@include font(null, 16px, 1.14, 0.03em);
 	color: $primary-text-color;
 	background-color: $primary-bg-color;
 }
