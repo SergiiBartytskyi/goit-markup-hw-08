@@ -3,13 +3,12 @@
 	padding-bottom: 60px;
 
 	background-color: $secondary-bg-color;
-}
 
-.footer__container {
-	display: flex;
-	align-items: baseline;
+	&__container {
+		display: flex;
+		align-items: baseline;
+	}
 }
-
 // ---------- Contacts ----------
 
 .address__item:not(:last-child) {
@@ -19,28 +18,27 @@
 .address__link {
 	font-style: normal;
 	@include font(null, 14px, 1.71, null);
-}
 
-.address__link--white {
-	color: $tertiary-text-color;
-	transition: color $transition-duration $transition-timing-function;
+	&--white {
+		color: $tertiary-text-color;
+		transition: color $transition-duration $transition-timing-function;
 
-	&:hover,
-	&:focus {
-		color: $accent-color;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+
+	&--grey {
+		color: rgba(255, 255, 255, 0.6);
+		transition: color $transition-duration $transition-timing-function;
+
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
 	}
 }
-
-.address__link--grey {
-	color: rgba(255, 255, 255, 0.6);
-	transition: color $transition-duration $transition-timing-function;
-
-	&:hover,
-	&:focus {
-		color: $accent-color;
-	}
-}
-
 // ---------- socials ----------
 .footer__subtitle {
 	margin-bottom: 20px;
@@ -71,53 +69,53 @@
 .subscription {
 	display: flex;
 	flex-direction: column;
-}
 
-.subscription__subtitle {
-	display: inline-block;
-	margin-bottom: 20px;
+	&__subtitle {
+		display: inline-block;
+		margin-bottom: 20px;
 
-	color: $tertiary-text-color;
-	cursor: pointer;
-}
-
-.subscription__input {
-	padding: 15px 16px;
-	width: 358px;
-	height: 50px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-	border-radius: 4px;
-
-	@include font(400, 16px, 1.25, null);
-
-	color: $link-color;
-	background-color: transparent;
-}
-
-.subscription__button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 200px;
-	height: 50px;
-	margin-left: 12px;
-
-	@include font(700, null, 1.88, 0.06em);
-
-	color: $tertiary-text-color;
-	background-color: $primary-btn-color;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-	transition: background-color $transition-duration $transition-timing-function;
-
-	&:hover,
-	&:focus {
-		background-color: $button-hover;
+		color: $tertiary-text-color;
+		cursor: pointer;
 	}
-}
 
-.subscription__icon {
-	margin-left: 10px;
-	fill: #ffffff;
+	&__input {
+		padding: 15px 16px;
+		width: 358px;
+		height: 50px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: 4px;
+
+		@include font(400, 16px, 1.25, null);
+
+		color: $link-color;
+		background-color: transparent;
+	}
+
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-width: 200px;
+		height: 50px;
+		margin-left: 12px;
+
+		@include font(700, null, 1.88, 0.06em);
+
+		color: $tertiary-text-color;
+		background-color: $primary-btn-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+		transition: background-color $transition-duration $transition-timing-function;
+
+		&:hover,
+		&:focus {
+			background-color: $button-hover;
+		}
+	}
+
+	&__icon {
+		margin-left: 10px;
+		fill: #ffffff;
+	}
 }

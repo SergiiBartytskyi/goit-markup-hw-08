@@ -23,30 +23,29 @@
 .overlay {
 	position: relative;
 	overflow: hidden;
-}
 
-.overlay__text {
-	position: absolute;
-	padding: 63px 24px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	color: $tertiary-text-color;
-	background-color: $overlay;
+	&__text {
+		position: absolute;
+		padding: 63px 24px;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: $tertiary-text-color;
+		background-color: $overlay;
 
-	@include font(null, 18px, 1.56, 0.03em);
+		@include font(null, 18px, 1.56, 0.03em);
 
-	transform: translateY(100%);
-	transition: transform $transition-duration $transition-timing-function;
+		transform: translateY(100%);
+		transition: transform $transition-duration $transition-timing-function;
 
-	.project__link:hover &,
-	.project__link:focus & {
-		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-		transform: translateY(0);
+		.project__link:hover &,
+		.project__link:focus & {
+			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+			transform: translateY(0);
+		}
 	}
 }
-
 .info__wrap {
 	padding: 20px 24px;
 	border: 1px solid #eeeeee;
