@@ -1,8 +1,12 @@
 .title {
-	@include font(null, 36px, 1.17, null);
+	@include font(null, 28px, 1.18, null);
+
+	@include desktop {
+		@include font(null, 36px, 1.17, null);
+	}
 }
 
 .subtitle {
-	@include font(700, 14px, 1.14, 0.03em);
+	@include font(null, 14px, null, null);
 	text-transform: uppercase;
 }
