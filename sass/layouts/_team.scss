@@ -52,15 +52,3 @@
 		margin-bottom: 16px;
 	}
 }
-
-.socials__link--white {
-	fill: $primary-icon-color;
-	transition: background-color $transition-duration $transition-timing-function,
-		fill $transition-duration $transition-timing-function;
-
-	&:hover,
-	&:focus {
-		background-color: $accent-color;
-		fill: #ffffff;
-	}
-}

@@ -49,16 +49,6 @@
 	margin-left: 70px;
 }
 
-.socials__link--grey {
-	fill: $tertiary-text-color;
-	background-color: rgba(255, 255, 255, 0.1);
-	transition: background-color $transition-duration $transition-timing-function;
-
-	&:hover,
-	&:focus {
-		background-color: $accent-color;
-	}
-}
 // ---------- subscription ----------
 .footer__subscription {
 	display: flex;
