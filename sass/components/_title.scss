@@ -1,4 +1,5 @@
 .title {
+	text-align: center;
 	@include font(null, 28px, 1.18, null);
 
 	@include desktop {

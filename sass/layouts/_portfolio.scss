@@ -6,7 +6,7 @@
 }
 
 .project__item {
-	width: 100%;
+	flex-basis: 100%;
 
 	@include tablet {
 		flex-basis: calc((100% - 30px) / 2);

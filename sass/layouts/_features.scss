@@ -5,13 +5,13 @@
 }
 
 .features__item {
-	width: 100%;
+	flex-basis: 100%;
 
 	@include tablet {
-		width: calc((100% - 30px) / 2);
+		flex-basis: calc((100% - 30px) / 2);
 	}
 	@include desktop {
-		width: calc((100% - 90px) / 4);
+		flex-basis: calc((100% - 90px) / 4);
 	}
 }
 

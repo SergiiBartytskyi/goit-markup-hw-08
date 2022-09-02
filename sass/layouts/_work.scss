@@ -1,7 +1,8 @@
 .work {
 	padding-top: 0;
-	text-align: center;
-	display: none;
+	@media screen and (max-width: 1199.5px) {
+		display: none;
+	}
 
 	@include desktop {
 		display: block;
@@ -13,7 +14,7 @@
 
 	&__list {
 		display: flex;
-		justify-content: space-between;
+		gap: 30px;
 	}
 
 	&__item {
