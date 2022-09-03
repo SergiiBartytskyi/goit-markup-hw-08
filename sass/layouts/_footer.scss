@@ -32,9 +32,6 @@
 	@media screen and (max-width: 1199.5px) {
 		margin-bottom: 60px;
 	}
-	// @include desktop {
-	// 	margin-right: 70px;
-	// }
 }
 .address {
 	&__item:not(:last-child) {
@@ -85,9 +82,6 @@
 
 // ---------- subscription ----------
 .subscription {
-	// @include desktop {
-	// 	margin-left: auto;
-	// }
 	&__subtitle {
 		display: inline-block;
 		margin-bottom: 20px;
