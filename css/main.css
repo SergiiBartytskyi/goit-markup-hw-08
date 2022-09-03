@@ -820,10 +820,11 @@ body {
   .footer__container {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .footer__contact {
     margin-right: 165px;
   }
@@ -831,11 +832,6 @@ body {
 @media screen and (max-width: 1199.5px) {
   .footer__contact {
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer__contact {
-    margin-right: 70px;
   }
 }
 
@@ -879,11 +875,6 @@ body {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .subscription {
-    margin-left: auto;
-  }
-}
 .subscription__subtitle {
   display: inline-block;
   margin-bottom: 20px;

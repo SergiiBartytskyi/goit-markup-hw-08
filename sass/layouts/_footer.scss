@@ -19,20 +19,22 @@
 		@include desktop {
 			display: flex;
 			align-items: baseline;
+			justify-content: space-between;
 		}
 	}
 }
 // ---------- Contacts ----------
 .footer__contact {
-	@include tablet {
+	@media screen and (min-width: 768px) and (max-width: 1199.5px) {
 		margin-right: 165px;
 	}
+
 	@media screen and (max-width: 1199.5px) {
 		margin-bottom: 60px;
 	}
-	@include desktop {
-		margin-right: 70px;
-	}
+	// @include desktop {
+	// 	margin-right: 70px;
+	// }
 }
 .address {
 	&__item:not(:last-child) {
@@ -83,9 +85,9 @@
 
 // ---------- subscription ----------
 .subscription {
-	@include desktop {
-		margin-left: auto;
-	}
+	// @include desktop {
+	// 	margin-left: auto;
+	// }
 	&__subtitle {
 		display: inline-block;
 		margin-bottom: 20px;
