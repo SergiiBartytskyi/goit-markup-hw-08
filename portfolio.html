@@ -273,11 +273,10 @@
 		</main>
 
 		<!--  Підвал  -->
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="container footer__container">
-				
 				<div class="footer__contact">
-					<a href="./portfolio.html" class="logo footer__logo link" name="contact">
+					<a href="./index.html" class="logo footer__logo link" name="contact">
 						Web<span class="footer__text">Studio</span>
 					</a>
 					<address class="address">
@@ -296,12 +295,12 @@
 								<a href="mailto:info@example.com" class="address__link address__link--grey link">info@example.com</a>
 							</li>
 							<li class="address__item">
-								<a href="tel:+380991111111" class="address__link address__link--grey link">+38 099 111 11 11</a>
+								<a href="tel:+380961111111" class="address__link address__link--grey link">+38 096 111 11 11</a>
 							</li>
 						</ul>
 					</address>
 				</div>
-				
+
 				<div class="footer__socials">
 					<h2 class="footer__subtitle subtitle">приєднуйтесь</h2>
 
@@ -340,10 +339,11 @@
 						</li>
 					</ul>
 				</div>
-				
-				<form class="footer__subscription">
-					<div class="subscription">
-						<label for="footer-email" class="subscription__subtitle subtitle">Підпишіться на розсилку</label>
+
+				<form class="subscription">
+					<label for="footer-email" class="subscription__subtitle subtitle">Підпишіться на розсилку</label>
+
+					<div class="subscription__wrap">
 						<input
 							type="email"
 							class="subscription__input"
@@ -352,15 +352,15 @@
 							placeholder="E-mail"
 							required
 						/>
+						<button type="submit" class="subscription__button">
+							Підписатися
+							<svg class="subscription__icon" width="24" height="24">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</button>
 					</div>
-					<button type="submit" class="subscription__button">
-						Підписатися
-						<svg class="subscription__icon" width="24" height="24">
-							<use href="./images/icons.svg#icon-send"></use>
-						</svg>
-					</button>
 				</form>
 			</div>
-		</footer> -->
+		</footer>
 	</body>
 </html>

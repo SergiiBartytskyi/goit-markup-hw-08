@@ -8,9 +8,18 @@
 }
 
 .header__logo {
-	margin-right: 93px;
-	padding-top: 24px;
-	padding-bottom: 25px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	@include tablet {
+		padding-top: 26px;
+		padding-bottom: 26px;
+		margin-right: 87px;
+	}
+	@include desktop {
+		padding-top: 24px;
+		padding-bottom: 25px;
+		margin-right: 93px;
+	}
 }
 
 .header__text {
