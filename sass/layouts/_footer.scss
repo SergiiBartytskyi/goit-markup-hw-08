@@ -122,29 +122,23 @@
 		background-color: transparent;
 	}
 
-	&__button {
+	&__btn {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 200px;
-		height: 50px;
+		color: $tertiary-text-color;
+		background-color: $primary-btn-color;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 		@media screen and (max-width: 1199.5px) {
 			margin-right: auto;
 			margin-left: auto;
 		}
+	}
+	transition: background-color $transition-duration $transition-timing-function;
 
-		@include font(700, null, 1.88, 0.06em);
-
-		color: $tertiary-text-color;
-		background-color: $primary-btn-color;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-		transition: background-color $transition-duration $transition-timing-function;
-
-		&:hover,
-		&:focus {
-			background-color: $button-hover;
-		}
+	&:hover,
+	&:focus {
+		background-color: $button-hover;
 	}
 
 	&__icon {

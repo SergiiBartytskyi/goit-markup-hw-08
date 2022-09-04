@@ -54,11 +54,7 @@
 
 	&__btn {
 		display: inline-block;
-		min-width: 216px;
-		padding: 10px 32px;
-
 		font-family: inherit;
-		@include font(700, 16px, 1.88, 0.06em);
 
 		text-decoration: none;
 		color: $tertiary-text-color;
