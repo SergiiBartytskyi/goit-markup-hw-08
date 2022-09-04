@@ -133,14 +133,14 @@
 			margin-right: auto;
 			margin-left: auto;
 		}
-	}
-	transition: background-color $transition-duration $transition-timing-function;
 
-	&:hover,
-	&:focus {
-		background-color: $button-hover;
-	}
+		transition: background-color $transition-duration $transition-timing-function;
 
+		&:hover,
+		&:focus {
+			background-color: $button-hover;
+		}
+	}
 	&__icon {
 		margin-left: 10px;
 		fill: #ffffff;
