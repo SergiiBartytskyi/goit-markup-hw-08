@@ -22,7 +22,7 @@
 	</head>
 	<body>
 		<!--  Шапка сторінки  -->
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header__container">
 				<a href="./portfolio.html" class="logo header__logo link"> Web<span class="header__text">Studio</span> </a>
 
@@ -58,8 +58,61 @@
 						>
 					</li>
 				</ul>
+				<button type="button" class="mobile__btn--open" data-menu-open>
+					<svg class="mobile__icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-menu"></use>
+					</svg>
+				</button>
 			</div>
-		</header> -->
+			<div class="mobile__menu is-hidden" data-menu>
+				<div class="mobile__container">
+					<button type="button" class="mobile__btn--close" data-menu-close>
+						<svg class="mobile__icon" width="40" height="40">
+							<use href="./images/icons.svg#icon-menu-close"></use>
+						</svg>
+					</button>
+					<nav class="mobile__navigation">
+						<ul class="mobile__list list">
+							<li class="mobile__item">
+								<a href="./index.html" class="mobile__link link">Студія</a>
+							</li>
+							<li class="mobile__item">
+								<a href="./portfolio.html" class="mobile__link link current">Портфоліо</a>
+							</li>
+							<li class="mobile__item">
+								<a href="#contact" class="mobile__link link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="mobile-menu-bottom">
+						<ul class="mobile-contact__list list">
+							<li class="mobile-contact__item">
+								<a href="mailto:info@devstudio.com" class="mobile-contact__link link"> info@devstudio.com </a>
+							</li>
+							<li class="mobile-contact__item">
+								<a href="tel:+380961111111" class="mobile-contact__link mobile-contact__link--blue link">
+									+38 096 111 11 11</a
+								>
+							</li>
+						</ul>
+						<ul class="mobile-socials list">
+							<li class="mobile-socials__item">
+								<a href="" class="mobile-socials__link link" rel="noopener noreferrer nofollow">Instagram </a>
+							</li>
+							<li class="mobile-socials__item">
+								<a href="" class="mobile-socials__link link" rel="noopener noreferrer nofollow">Twitter </a>
+							</li>
+							<li class="mobile-socials__item">
+								<a href="" class="mobile-socials__link link" rel="noopener noreferrer nofollow">Facebook </a>
+							</li>
+							<li class="mobile-socials__item">
+								<a href="" class="mobile-socials__link link" rel="noopener noreferrer nofollow">Linked In </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
 
 		<!--  Унікальний контент сторінки  -->
 		<main>
@@ -276,7 +329,7 @@
 		<footer class="footer">
 			<div class="container footer__container">
 				<div class="footer__contact">
-					<a href="./index.html" class="logo footer__logo link" name="contact">
+					<a href="./portfolio.html" class="logo footer__logo link" name="contact">
 						Web<span class="footer__text">Studio</span>
 					</a>
 					<address class="address">
@@ -362,5 +415,6 @@
 				</form>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

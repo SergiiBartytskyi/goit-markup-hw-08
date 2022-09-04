@@ -12,26 +12,28 @@
 
 	transition: visibility $transition-duration $transition-timing-function,
 		opacity $transition-duration $transition-timing-function;
-
-	&.is-hidden {
-		visibility: hidden;
-		opacity: 0;
-		pointer-events: none;
-	}
 }
-
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
 .modal {
 	position: absolute;
 	padding: 40px;
 	top: 50%;
 	left: 50%;
-	width: 528px;
-	min-height: 581px;
+	width: 450px;
+	min-height: 609px;
 
 	background: $primary-bg-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
+	@include desktop {
+		width: 528px;
+		min-height: 581px;
+	}
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform $transition-duration $transition-timing-function,
 		scale $transition-duration $transition-timing-function;
@@ -64,9 +66,12 @@
 .modal-title {
 	margin-bottom: 12px;
 
-	@include font(700, 20px, 1.15, 0.03em);
+	@include font(700, 20px, 1.5, 0.03em);
 	text-align: center;
 	color: $primary-text-color;
+	@include desktop {
+		@include font(null, null, 1.15, null);
+	}
 }
 
 .modal-form {
@@ -79,6 +84,7 @@
 }
 
 .modal-label {
+	display: block;
 	@include font(400, 12px, 1.17, 0.01em);
 	color: $secondary-text-color;
 
@@ -164,8 +170,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	@include font(null, 14px, 1.71, 0.03em);
 	color: $secondary-text-color;
+	@include font(null, 12px, 1.17, 0.03em);
+	@include desktop {
+		@include font(null, 14px, 1.71, null);
+	}
 
 	span {
 		display: flex;
