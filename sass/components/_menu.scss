@@ -47,6 +47,11 @@
 		}
 
 		&.is-hidden {
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+		}
+		&.is-hidden {
 			transform: translate(0, 0) scale(0);
 		}
 	}
