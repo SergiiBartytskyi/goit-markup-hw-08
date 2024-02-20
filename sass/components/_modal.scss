@@ -36,8 +36,8 @@
 		width: 450px;
 	}
 	@include desktop {
-		width: 528px;
-		min-height: 581px;
+		width: 500px;
+		min-height: 600px;
 	}
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform $transition-duration $transition-timing-function,
